@@ -1,0 +1,89 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+summary {
+    list-style-type: none;
+}
+
+summary::webkit-details-marker {
+    display: none; 
+}
+
+img {
+    max-width: 100%;
+    display: block;
+  }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    /* letter-spacing: 0.05em; */
+    font-size: 16px;
+}
+.site-wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #edf2ec;
+
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.accordion__wrapper {
+    padding: 35px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.accordion {
+    color: rgb(0, 119, 255);
+}
+.accordion:hover {
+    cursor: pointer;
+}
+
+summary:focus, summary:hover {
+    color: black;
+  }
+  
+.title {
+    padding-bottom: 16px;
+    transition: 0.3s all;
+}
+
+
+.accordion__title {
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 0.05em;
+    border-top:  0.5px solid #AEA1A1;
+    color: rgb(0, 119, 255);
+}
+
+
+
