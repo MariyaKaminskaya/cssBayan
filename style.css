@@ -36,7 +36,6 @@ body {
     font-style: normal;
     font-weight: bolder;
     /* letter-spacing: 0.05em; */
-    font-size: 16px;
 }
 .site-wrapper {
     min-height: 100vh;
@@ -54,7 +53,6 @@ body {
 }
 
 .accordion__wrapper {
-    padding: 35px 45px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,20 +66,15 @@ body {
     cursor: pointer;
 }
 
-summary:focus, summary:hover {
-    color: black;
-  }
-
 .title {
-    padding-bottom: 16px;
+    padding-bottom: 1em;
 }
 
 .accordion__title {
-    padding: 12px 0;
-    font-size: 18px;
+    padding: 1em 0;
     font-weight: bolder;
     letter-spacing: 0.05em;
-    border-top:  0.5px solid #AEA1A1;
+    border-top:  0.05em solid #AEA1A1;
     color: rgb(0, 119, 255);
 }
 
@@ -90,7 +83,7 @@ summary:focus, summary:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 2%;
 }
 
 details[open]:hover {
