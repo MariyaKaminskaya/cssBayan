@@ -19,6 +19,8 @@ html {
 }
 summary {
     list-style-type: none;
+    transition: 0.6s all;
+
 }
 
 summary::webkit-details-marker {
@@ -69,12 +71,10 @@ body {
 summary:focus, summary:hover {
     color: black;
   }
-  
+
 .title {
     padding-bottom: 16px;
-    transition: 0.3s all;
 }
-
 
 .accordion__title {
     padding: 12px 0;
@@ -84,6 +84,32 @@ summary:focus, summary:hover {
     border-top:  0.5px solid #AEA1A1;
     color: rgb(0, 119, 255);
 }
+
+.accordion__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+details[open]:hover {
+    background: url(./img/x_icon.svg) 95% 10% no-repeat;
+    
+}
+details:hover {
+    background: url(./img/plus_icon.svg) 95% 50% no-repeat;
+}
+details[open] .accordion__title {
+    color: black;
+}
+details[open] img {
+    animation: spoiler 1s;
+  }
+  @keyframes spoiler {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  }
 
 
 
