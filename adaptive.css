@@ -1,0 +1,56 @@
+/* desktop 1920×1080 */
+@media screen and (max-width: 1920px) {
+    .accordion__wrapper {
+        padding: 6% 10%;
+    }
+    .title {
+        font-size: 4em;
+    }
+    .accordion__title {
+        font-size: 3em;
+    }
+    summary:focus, summary:hover {
+        color: black;
+      }
+}
+/*  tablet 820x1180 */
+
+@media screen and (max-width: 820px) {
+    .accordion__wrapper {
+        padding: 8% 10%;
+    }
+    .title {
+        font-size: 3em;
+    }
+    .accordion__title {
+        font-size: 2em;
+    }
+    .accordion:hover {
+        cursor: none;
+    }
+}
+
+/* mobile 320x568 */
+@media screen and (max-width: 320px) {
+    .accordion__wrapper {
+        padding: 8% 8%;
+    }
+    .title {
+        font-size: 2em;
+    }
+    .accordion__title {
+        font-size: 1em;
+    }
+
+    details[open]:hover {
+        background: url(./img/x_icon.svg) 98% 5% no-repeat;
+        
+    }
+    details:hover {
+        background: url(./img/plus_icon.svg) 95% 50% no-repeat;
+    }
+    .accordion:hover {
+        cursor: none;
+    }
+}
+
